@@ -22,23 +22,20 @@ public class RPS
         int tie = 0;
 
         //begin loop    
-        while (ans.equals("y")){           
+        //while (ans.equals("y")){           
             System.out.println("Good luck human...");
             System.out.println("");
+            System.out.println("What do you throw?  [1] Rock, [2] Paper, [3] Scissors?"); //player turn
+            turn = sc.nextInt();
 
-            while (turn != ROCK && turn != PAPER && turn != SCISSORS) { //loops until player makes valid choice
-                System.out.println("What do you throw?  [1] Rock, [2] Paper, [3] Scissors?"); //player turn
-                turn = sc.nextInt();
-
-                if (turn != ROCK && turn != PAPER && turn != SCISSORS){  //prevents invalid answers
-                    System.out.println("Invalid response. Please try again");
-                } 
-
+            if (turn != ROCK && turn != PAPER && turn != SCISSORS){  //prevents invalid answers
+                System.out.println("Invalid response. Please try again");
             } 
-            
-            computerTurn = (int) Math.random()*3; //computer makes turn
-            System.out.println(computerTurn);
 
+            if (turn == ROCK || turn == PAPER || turn == SCISSORS) { //runs if player makes valid choice
+                computerTurn = (int) (Math.random()*3) + 1; //computer makes turn
+                System.out.println("computerTurn: " + computerTurn);
+            }
         }
-    }
+    //}
 }
