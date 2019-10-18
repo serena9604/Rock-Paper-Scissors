@@ -2,6 +2,12 @@
 comment0.target=RPS
 comment1.params=playerChoice\ computerChoice
 comment1.target=void\ choice(java.lang.String,\ java.lang.String)
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-numComments=3
+comment2.params=
+comment2.target=void\ victory()
+comment3.params=
+comment3.target=void\ tie()
+comment4.params=
+comment4.target=void\ loss()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
